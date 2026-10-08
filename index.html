@@ -3,50 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Find out what is your Wu-Tang Clan name</h1>
-    
-        <section>   
+    <section class="wu-tang">
+        <section class="questions">  
+            <h1>Find out what is your Wu-Tang Clan name</h1>
+            <section class="question1">
             <label for ="food">What is your fav food
             <input class="choice" type ="radio" name="q1" value="a">French Fries
             <input class="choice" type="radio" name="q1" value="b">Tacos
             <input class="choice" type="radio" name="q1" value="c">Buffalo Wing
             </label>
-        </section> 
-        <section>
+            </section>
+            
+            <section class="question2">
             <label for="coffee">What is your fav coffee
                 <input class="choice" type="radio" name="q2" value="a">Flat White
                 <input class="choice" type="radio" name="q2" value="b">Cold Brew
                 <input class="choice" type="radio" name="q2" value="c">Espresso
             </label>
-        </section>
-        <section>
+            </section>
+       
+            <section class="question3">
             <label for="season">What is your fav season
                 <input class="choice" type="radio" name="q3" value="a">Fall
                 <input class="choice" type="radio" name="q3" value="b">Spring
                 <input class="choice" type="radio" name="q3" value="c">Summer
             </label>
-        </section>
-        <section>
+            </section>
+        
+            <section class="question4">
             <label for="color">Pick your fav color from these
                 <input class="choice" type="radio" name="q4" value="a">Red
                 <input class="choice" type="radio" name="q4" value="b">Yellow
                 <input class="choice" type="radio" name="q4" value="c">Blue
             </label>
-        </section>
-        <section>
+            </section>
+
+            <section class="question5">
             <label for="">What is your ideal way to enjoy vacation
                 <input class="choice" type="radio" name="q5" value="a">Cozy Staycation
                 <input class="choice" type="radio" name="q5" value="b">Luxury Cruise
                 <input class="choice" type="radio" name="q5" value="c">Hiking-get lost in the wood
             </label>
+            </section>
+
+            <button id="submit">Submit</button>
+            <h2 id="result">Here is your Wu-Tang name:</h2>
+            <h2 id="nameFromBackEnd"></h2>
         </section>    
     
-    <button id="submit">Submit</button>
-    <h2 id="result"></h2>
-    <h2 id="nameFromBackEnd"></h2>
+        
+    </section>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

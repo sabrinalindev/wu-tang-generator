@@ -83,6 +83,13 @@ const server = http.createServer(function(req, res) {
       res.write(data);
       res.end();
     });
+  }else if (page == '/img/cover.jpeg'){
+    
+    fs.readFile('img/cover.jpeg', function(err, data) {
+      res.writeHead(200, {'Content-Type': 'image/jpeg'});
+      res.write(data);
+      res.end();
+    });
   }else if (page == '/js/main.js'){
     fs.readFile('js/main.js', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/javascript'});
@@ -102,4 +109,4 @@ const server = http.createServer(function(req, res) {
   }
 });
 
-server.listen(5500);
+server.listen(8000);
